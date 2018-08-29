@@ -24,13 +24,14 @@ import Foundation
 
 /// A class to convert the standard emoji representation into something more
 /// customised. Images not provided.
-public final class Emojica {
+public final class Emojica : NSObject {
     
-    public init() {}
+    public override init() { super.init() }
     
     /// Initializes an instance that uses the given font.
     /// - parameter font:   The font to be used in converted attributed strings.
     public init(font: UIFont) {
+        super.init()
         self.font = font
     }
     
