@@ -375,7 +375,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -397,7 +396,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Release;
 		};
