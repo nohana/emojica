@@ -103,7 +103,7 @@ public final class Emojica : NSObject {
     
     /// Setting this to `false` _used to_ strip out all modifier symbols (🏻, 🏼, 🏽, 🏾 and 🏿).
     /// - note:     This will be removed in a future version.
-    @available(*, deprecated: 1.0)
+    @available(*, deprecated)
     public var useModifiers: Bool = true
     
     /// Keep the instance non-revertible if the original strings aren't needed after conversion.
@@ -153,7 +153,7 @@ extension Emojica {
         // Fix font and size of final string.
         let resultRange = result.mutableString.range(of: result.string)
         let font = self.font ?? UIFont.systemFont(ofSize: self.pointSize)
-        result.addAttribute(NSAttributedStringKey.font, value: font, range: resultRange)
+        result.addAttribute(NSAttributedString.Key.font, value: font, range: resultRange)
         
         return result
     }
@@ -171,7 +171,7 @@ extension Emojica {
         // Return the string as is if the instance isn't revertible.
         guard self.revertible else { return storage.string }
         
-        storage.enumerateAttribute(NSAttributedStringKey.attachment, in: range, options: []) { (value, range, _) -> Void in
+        storage.enumerateAttribute(NSAttributedString.Key.attachment, in: range, options: []) { (value, range, _) -> Void in
             if let attachment = value as? EmojicaAttachment {
                 storage.replaceCharacters(in: range, with: attachment.representation)
             }
