@@ -260,7 +260,6 @@ extension Unicode.Block {
             
         case .transportAndMapSymbols:
             return [
-                0x1f6d5,
                 0x1f6d6,
                 0x1f6d7,
                 0x1f6d8,
@@ -276,7 +275,6 @@ extension Unicode.Block {
                 0x1f6ee,
                 0x1f6ef,
                 
-                0x1f6fa,
                 0x1f6fb,
                 0x1f6fc,
                 0x1f6fd,
@@ -286,55 +284,22 @@ extension Unicode.Block {
         case .supplementalSymbolsAndPictographs:
             return [
                 0x1f90c,
-                0x1f90d,
-                0x1f90e,
-                0x1f90f,
                 
-                0x1f93f,
-                
-                0x1f971,
                 0x1f972,
 
                 0x1f977,
                 0x1f978,
                 0x1f979,
 
-                0x1f97b,
-                
                 0x1f9a3,
                 0x1f9a4,
-                0x1f9a5,
-                0x1f9a6,
-                0x1f9a7,
-                0x1f9a8,
-                0x1f9a9,
-                0x1f9aa,
+                
                 0x1f9ab,
                 0x1f9ac,
                 0x1f9ad,
-                0x1f9ae,
-                0x1f9af,
-                
-                0x1f9ba,
-                0x1f9bb,
-                0x1f9bc,
-                0x1f9bd,
-                0x1f9be,
-                0x1f9bf,
-                
-                0x1f9c3,
-                0x1f9c4,
-                0x1f9c5,
-                0x1f9c6,
-                0x1f9c7,
-                0x1f9c8,
-                0x1f9c9,
-                0x1f9ca,
+
                 0x1f9cb,
                 0x1f9cc,
-                0x1f9cd,
-                0x1f9ce,
-                0x1f9cf
             ]
         }
     }
