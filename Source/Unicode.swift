@@ -346,7 +346,7 @@ extension Unicode.Block {
                 0x1f9cc,
                 0x1f9cd,
                 0x1f9ce,
-                0x1f9cf
+                0x1f9cf,
                 0x1f979,
 
                 0x1f9cc,
