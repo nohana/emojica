@@ -31,7 +31,7 @@
 			remoteGlobalIDString = 3755AE181DDF99F5007E5EBF;
 			remoteInfo = Emojica;
 		};
-		7AAEED9B2252E97200AD1AEC /* PBXContainerItemProxy */ = {
+		7A3B651322D0EB6300BED280 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 37CF90091DE3B4A700FAE008 /* Emojica.xcodeproj */;
 			proxyType = 2;
@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				37CF900E1DE3B4A700FAE008 /* Emojica.framework */,
-				7AAEED9C2252E97200AD1AEC /* EmojicaTests.xctest */,
+				7A3B651422D0EB6300BED280 /* EmojicaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,7 +158,7 @@
 				TargetAttributes = {
 					37CF8FF31DE3B42600FAE008 = {
 						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -168,6 +168,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -195,11 +196,11 @@
 			remoteRef = 37CF900D1DE3B4A700FAE008 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		7AAEED9C2252E97200AD1AEC /* EmojicaTests.xctest */ = {
+		7A3B651422D0EB6300BED280 /* EmojicaTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = EmojicaTests.xctest;
-			remoteRef = 7AAEED9B2252E97200AD1AEC /* PBXContainerItemProxy */;
+			remoteRef = 7A3B651322D0EB6300BED280 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -380,8 +381,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xoudini.EmojicaExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -395,8 +395,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xoudini.EmojicaExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
