@@ -126,7 +126,9 @@ extension UnicodeScalar {
         case Block.supplementalSymbolsAndPictographs.range:
             let block = Block.supplementalSymbolsAndPictographs
             return !block.nonEmoji.contains(codePoint) && !block.unassigned.contains(codePoint)
-            
+        case Block.symbolsAndPictographsExtendedA.range:
+            let block = Block.symbolsAndPictographsExtendedA
+            return !block.unassigned.contains(codePoint)
         case let value where Unicode.additionalCharacters.contains(value):
             return true
             
