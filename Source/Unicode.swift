@@ -198,6 +198,7 @@ struct Unicode {
             0x1f7ea,    //
             0x1f7eb,    //
             
+            // Math Symbols
             0x1f7f0,    //
         ]
     }
