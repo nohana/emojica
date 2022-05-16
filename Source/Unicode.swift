@@ -986,8 +986,8 @@ extension Unicode.Block {
 // - Version of the Unicode® Standard:      14.0
 // - Date checked:                          May 13, 2022
 //
-// As of the above version there are 1329 complete base characters (singletons) that can be
-// represented as emoji, and an additional 38 incomplete singletons, totaling 1367 code points.
+// As of the above version there are 1366 complete base characters (singletons) that can be
+// represented as emoji, and an additional 38 incomplete singletons, totaling 1404 code points.
 //
 // There are six blocks that are mainly used for emoji, so the ranges of these blocks are used as a
 // first-level validation to check whether a character is emoji or not. These blocks and the ranges
@@ -1005,15 +1005,15 @@ extension Unicode.Block {
 //                                                                           1267
 //
 //
-// The above blocks contain 1231 emoji in total, which leaves 136 emoji outside of these ranges.
+// The above blocks contain 1267 emoji in total, which leaves 137 emoji outside of these ranges.
 //
 // Some of these blocks contain unassigned characters or characters not considered to be emoji. The
 // values of these code points are listed in the appendices [1] and [2] below. The Emoticons block
 // is currently the only one fully consisting of emoji.
 //
-// Of the 136 emoji characters that are not found in the above blocks, 38 are incomplete singletons
-// (26 regional indicator symbols and 12 keycap base characters). The remaining 98 characters are
-// found in various other blocks. All of these 136 additional characters are listed in appendix [3]
+// Of the 137 emoji characters that are not found in the above blocks, 38 are incomplete singletons
+// (26 regional indicator symbols and 12 keycap base characters). The remaining 99 characters are
+// found in various other blocks. All of these 137 additional characters are listed in appendix [3]
 // below.
 //
 //
@@ -1240,3 +1240,5 @@ extension Unicode.Block {
 // p. Geometric Shapes Extended - 12 characters.
 //    0x1f7e0...0x1f7eb
 //
+// q. Math Symbols - 1 characters.
+//    0x1f7f0
