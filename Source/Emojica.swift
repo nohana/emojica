@@ -211,9 +211,9 @@ extension Emojica {
                 
                 if unicodeScalarStack.isEmpty {
                     
-                    // Quit iterating if stack is empty and current scalar isn't emoji.
-                    guard unicodeScalar.isEmoji else { break }
-                    unicodeScalarStack.push(unicodeScalar)
+                    if unicodeScalar.isEmoji {
+                        unicodeScalarStack.push(unicodeScalar)
+                    }
                     
                 } else {
                     
