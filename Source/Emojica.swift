@@ -108,6 +108,11 @@ public final class Emojica : NSObject {
     
     /// Keep the instance non-revertible if the original strings aren't needed after conversion.
     public var revertible: Bool = false
+    
+    
+    /// The bundle containing the image file.
+    /// - Note: Specify nil to search the app’s main bundle.
+    public var imageBundle: Bundle?
 }
 
 extension Emojica {
@@ -281,7 +286,7 @@ extension Emojica {
                 .joined(separator: self.separator)
         }
         
-        guard let image = UIImage(named: name) else { return nil }
+        guard let image = UIImage(named: name, in: imageBundle, with: nil) else { return nil }
         
         let attachment = EmojicaAttachment()
         attachment.image = image
@@ -311,7 +316,7 @@ extension Emojica {
             
             let name = String(format: self.formatString, unicodeScalar.value)
             
-            if let image = UIImage(named: name) {
+            if let image = UIImage(named: name, in: imageBundle, with: nil) {
                 
                 let attachment = EmojicaAttachment()
                 attachment.image = image
