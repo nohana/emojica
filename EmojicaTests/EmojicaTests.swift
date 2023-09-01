@@ -21,8 +21,11 @@
 //
 
 import XCTest
+import Emojica
 
 class EmojicaTests: XCTestCase {
+    
+    let emojica = Emojica()
     
     override func setUp() {
         super.setUp()
@@ -37,6 +40,39 @@ class EmojicaTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testConvert() {
+        XCTContext.runActivity(named: "Half-width characters") { _ in
+            let inputText: String = "Sample text 😎"
+            let converted: NSAttributedString = emojica.convert(string: inputText)
+            XCTAssertEqual(inputText, converted.string)
+        }
+        XCTContext.runActivity(named: "Hiragana") { _ in
+            let inputText: String = "さんぷる　てきすと 😎"
+            let converted: NSAttributedString = emojica.convert(string: inputText)
+            XCTAssertEqual(inputText, converted.string)
+        }
+        XCTContext.runActivity(named: "Katakana") { _ in
+            let inputText: String = "サンプル　テキスト 😎"
+            let converted: NSAttributedString = emojica.convert(string: inputText)
+            XCTAssertEqual(inputText, converted.string)
+        }
+        XCTContext.runActivity(named: "Harf-wide Katakana") { _ in
+            let inputText: String = "ｻﾝﾌﾟﾙ ﾃｷｽﾄ 😎"
+            let converted: NSAttributedString = emojica.convert(string: inputText)
+            XCTAssertEqual(inputText, converted.string)
+        }
+        XCTContext.runActivity(named: "Kanji") { _ in
+            let inputText: String = "例文 😎"
+            let converted: NSAttributedString = emojica.convert(string: inputText)
+            XCTAssertEqual(inputText, converted.string)
+        }
+        XCTContext.runActivity(named: "concatenation") { _ in
+            let inputText: String = "ǟæ 😎"
+            let converted: NSAttributedString = emojica.convert(string: inputText)
+            XCTAssertEqual(inputText, converted.string)
+        }
     }
     
     func testPerformanceExample() {
